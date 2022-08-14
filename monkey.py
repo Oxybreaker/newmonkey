@@ -55,7 +55,7 @@ class JacquesMod(loader.Module):
         w, h = draw.multiline_textsize(t, font=font)
         imtext = Image.new("RGBA", (w + 20, h + 20), (0, 0, 0, 0))
         draw = ImageDraw.Draw(imtext)
-        draw.multiline_text((10, 10), t, (0, 0, 0), font=font, align='center')
+        draw.multiline_text((10, 10), t, (105, 105, 105), font=font, align='center')
         imtext.thumbnail((W, H))
         w, h = imtext.size
         img.paste(imtext, ((W - w) // 2, (H - h) // 2), imtext)
