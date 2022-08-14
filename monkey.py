@@ -41,7 +41,7 @@ class JacquesMod(loader.Module):
         else:
             txt = utils.get_args_raw(message)
         await message.edit("<b>Извинись, быдло...</b>")
-        pic = requests.get("https://www.meme-arsenal.com/memes/54c7ee322f4b0ae586ec96195a59a073.jpg")
+        pic = requests.get("https://memepedia.ru/wp-content/uploads/2021/04/qblulgcbrwk-%E2%80%94-kopija.jpg")
         pic.raw.decode_content = True
         img = Image.open(io.BytesIO(pic.content)).convert("RGB")
 
